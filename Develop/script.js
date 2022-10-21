@@ -9,11 +9,25 @@ var fullChars = {
   charsetSym: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 };
 var charactersCriteria = function() {
+  let generateString = "";
   var secondCriteria = confirm("Include lowercase?");
   var thirdCriteria = confirm("Include uppercase?");
   var fourthCriteria = confirm("Include number?");
   var lastCriteria = confirm("Include special characters?");
-}
+  if(secondCriteria === true) {
+    generateString = fullChars.charsetAbcLower;
+  }
+  if(thirdCriteria === true) {
+    generateString += fullChars.charsetAbcUpper;
+  }
+  if(fourthCriteria === true) {
+    generateString += fullChars.charsetNum;
+  }
+  if(lastCriteria === true) {
+   generateString += fullChars.charsetSym;
+  }
+  console.log(generateString);
+};
 
 document.querySelector('#generate').addEventListener('click', userChoice);
 
@@ -26,11 +40,13 @@ function userChoice() {
       passLength = firstCriteria;
       console.log(passLength);
       charactersCriteria();
-      
-      }
-    };
+    }
+  };
+ 
+  
+  // for(var i = 0; i < 4; i++) {
     
-    
+  // }
     // for(var i = 0; i < firstCriteria; i++) {
   // do {
   //   alert("Try again");
