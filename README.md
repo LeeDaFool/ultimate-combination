@@ -6,13 +6,12 @@ This project was develop with one thing in mind, that was to provide the ultimat
 
 ## Installation
 
-No intallation needed. 
+Link to website:
+https://leedafool.github.io/ultimate-combination/
 
 ## Usage
 
 Simply click the blue button label "Generate Combination" and start by answering the following prompt.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![Screenschot of website](./assets/images/ultimate-combination.png)
 
